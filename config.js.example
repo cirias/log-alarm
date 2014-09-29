@@ -1,0 +1,24 @@
+module.exports = {
+  server: {
+    port: 8172,
+    delimiter: '\n',
+    spliter: '|'
+  },
+  email: {
+    server: {
+      user: "",
+      password: "",
+      host: "",
+      port: 25
+    },
+    from: "server <>",
+    to: "me <>"
+  },
+  applications: {
+    tsq: {
+      heartbeatGap: 60 * 1000,
+      selfHealingGap: 60 * 1000,
+      maxErrorNum: 5
+    }
+  }
+}
