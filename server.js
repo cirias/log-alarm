@@ -51,7 +51,7 @@ LogServer.prototype.run = function () {
 
 LogServer.prototype._receive = function (data, socket) {
   var part = data.toString();
-  that._logger.debug('Received TCP data:', part);
+  this._logger.debug('Received TCP data:', part);
   socket._buffer += part;
   if (socket._buffer.indexOf(this.config.server.delimiter)) {
     this._flush(socket);
