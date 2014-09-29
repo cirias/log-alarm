@@ -35,6 +35,7 @@ LogServer.prototype.run = function () {
     that._logger.info('server connected');
     socket._buffer = '';
     socket.on('data', function (data) {
+      that._logger.info('server received');
       that._receive(data, socket);
     });
     socket.on('error', function(err) {
