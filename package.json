@@ -23,6 +23,8 @@
   "homepage": "https://github.com/fhc023/log-alarm",
   "dependencies": {
     "emailjs": "^0.3.11",
+    "split": "^0.3.0",
+    "through": "^2.3.6",
     "winston": "^0.8.0"
   }
 }
